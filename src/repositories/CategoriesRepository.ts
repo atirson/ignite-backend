@@ -23,6 +23,10 @@ class CategoriesRepository {
   list(): Category[] {
     return this.categories;
   }
+
+  fyndByName(name: string): Category {
+    return this.categories.find(category => category.name === name);
+  }
 }
 
 export { CategoriesRepository };
