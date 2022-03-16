@@ -3,7 +3,7 @@ import { Category } from '../model/Category';
 import {
   ICategoryRepository,
   ICreateCategoryDTO,
-} from './ICategoriesRepository';
+} from './implementations/ICategoriesRepository';
 
 class CategoriesRepository implements ICategoryRepository {
   private categories: Category[];
